@@ -9,6 +9,4 @@ public class ContactServices<T> {
 	public ContactServices(T newRecord, List<T> addList) {
 		addList.add(newRecord);
 	}
-
-
 }

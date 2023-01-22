@@ -3,12 +3,12 @@ package Model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CounterAgentUnit<T> implements ContactListInterface<T>{
+public class CounterAgentUnit<T> implements ContactListInterface<T> {
 
 	T name;
 	private final List<T> contactListInterfaceList = new ArrayList<>();
 
-	public CounterAgentUnit(T name, T contactPhone, T contactVk, T contactEmail, T contactTeleg){
+	public CounterAgentUnit(T name, T contactPhone, T contactVk, T contactEmail, T contactTeleg) {
 		this.name = name;
 
 		contactListInterfaceList.add(contactPhone);
