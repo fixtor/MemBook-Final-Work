@@ -1,9 +1,4 @@
-import Base.EmailContact;
-import Base.PhoneContact;
-import Base.TelegrammContact;
-import Base.VkontakteContact;
 import Model.ContactListInterface;
-import Model.Contragent;
 import Model.CounterAgentUnit;
 
 import java.util.ArrayList;
