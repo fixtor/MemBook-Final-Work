@@ -1,12 +1,12 @@
 package Base;
 
-import Model.ContactListInterface;
+import Controller.IContactList;
 
-public class PhoneContact<T> implements ContactListInterface<T> {
+public class PhoneIContact<T> implements IContactList<T> {
 
 	T phoneNumber;
 
-	public PhoneContact(T phoneNumber) {
+	public PhoneIContact(T phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 

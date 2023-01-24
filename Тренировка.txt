@@ -1,0 +1,23 @@
+AgentUnit<String> agentUnit = new AgentUnit<>("Наташа",
+				"+79042713475", "@2101701", "nayasha@yahoo.com", "@Sope", "Пушкина 139, 60");
+
+//		AgentUnit<String> agentUnit1 = new AgentUnit<>("Игорь",
+//				"+9112651565", "@210171231", "igor@yahoo.com", "@Havi", "Пушкина");
+//
+
+//		System.out.println(agentUnit.getName());
+//		System.out.println(agentUnit.getCountAgentList());
+//		System.out.println(agentUnit1.getName());
+//		System.out.println(agentUnit1.getCountAgentList());
+
+		AgentListI newUnit1 = new AgentListI(agentUnit);
+		AgentListI newUnit = new AgentListI(new AgentUnit<>(
+				"Orion",
+				"+79185556464",
+				"@ya.ru",
+				"orion@ya.ru",
+				"@rrr",
+				"Москва"));
+
+
+		System.out.println(newUnit);

@@ -1,12 +1,12 @@
 package Base;
 
-import Model.ContactListInterface;
+import Controller.IContactList;
 
-public class VkontakteContact<T> implements ContactListInterface<T> {
+public class VkontakteIContact<T> implements IContactList<T> {
 
 	T vkId;
 
-	public VkontakteContact(T vkId) {
+	public VkontakteIContact(T vkId) {
 		this.vkId = vkId;
 	}
 

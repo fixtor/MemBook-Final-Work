@@ -1,12 +1,12 @@
 package Base;
 
-import Model.ContactListInterface;
+import Controller.IContactList;
 
-public class TelegrammContact<T> implements ContactListInterface<T> {
+public class TelegrammIContact<T> implements IContactList<T> {
 
 	T telegrammId;
 
-	public TelegrammContact(T telegrammId) {
+	public TelegrammIContact(T telegrammId) {
 		this.telegrammId = telegrammId;
 	}
 

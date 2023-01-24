@@ -1,11 +1,11 @@
 package Base;
 
-import Model.ContactListInterface;
+import Controller.IContactList;
 
-public class AddressContact<T> implements ContactListInterface<T> {
+public class AddressIContact<T> implements IContactList<T> {
 	T addressContact;
 
-	public AddressContact(T addressContact) {
+	public AddressIContact(T addressContact) {
 		this.addressContact = addressContact;
 	}
 

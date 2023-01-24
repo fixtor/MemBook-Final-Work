@@ -1,11 +1,11 @@
 package Base;
 
-import Model.ContactListInterface;
+import Controller.IContactList;
 
-public class EmailContact<T> implements ContactListInterface<T> {
+public class EmailIContact<T> implements IContactList<T> {
 	private T eMail;
 
-	public EmailContact(T eMail) {
+	public EmailIContact(T eMail) {
 		this.eMail = eMail;
 	}
 
