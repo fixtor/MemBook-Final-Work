@@ -18,7 +18,6 @@ public class Main {
 		agList.add(second);
 		// до сюда
 
-
 		Menu menu = new Menu(); //Создаем меню
 		menu.printMenu(); //печатаем
 		menu.exitMenu();
