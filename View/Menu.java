@@ -49,7 +49,15 @@ public class Menu {
 		for (int i = 0; i < agList.size(); i++) {System.out.println(agList.get(i));}
 	}
 
-	public void getMenu4(){
+	public void getMenu2(){
+		System.out.println(this.menu2);
+	}public void getMenu3(){
+		System.out.println(this.menu3);
+	}public void getMenu4(){
 		System.out.println(this.menu4);
+	}public void getMenu5(){
+		System.out.println(this.menu5);
+	}public void getMenu6(){
+		System.out.println(this.menu6);
 	}
 }

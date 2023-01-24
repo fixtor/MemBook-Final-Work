@@ -1,5 +1,6 @@
+package Controller;
+
 import Model.AgentUnit;
-import Model.PhoneBook;
 import View.Menu;
 
 import java.util.ArrayList;
@@ -15,12 +16,8 @@ public class Main {
 		AgentUnit<String> second = new AgentUnit<>("Ivan", "+9112651565", "@210171231", "igor@yahoo.com", "@Havi", "Пушкина");
 		agList.add(first);
 		agList.add(second);
-
-		PhoneBook phoneBook = new PhoneBook();
-		phoneBook.addNewAgent(second);
-		phoneBook.addNewAgent(first);
-
 		// до сюда
+
 
 		Menu menu = new Menu(); //Создаем меню
 		menu.printMenu(); //печатаем
@@ -43,7 +40,7 @@ public class Main {
 					userInput = scanner.nextInt();
 					break;
 				case 2:
-					System.out.println("Найти контрагента по названию. Посмотреть подробную информацию о нём");
+					menu.getMenu2();
 					System.out.println("Введите имя контрагента: ");
 					String userName = scanner1.nextLine();
 					int flag = 0;
@@ -59,7 +56,7 @@ public class Main {
 					userInput = scanner.nextInt();
 					break;
 				case 3:
-					System.out.println("Добавить контрагента\n");
+					menu.getMenu3();
 					System.out.println("Введите имя контрагента: ");
 					String name = scanner3.nextLine();
 					System.out.println("\nВведите телефон: ");
@@ -98,7 +95,7 @@ public class Main {
 					break;
 
 				case 5:
-					System.out.println("Добавить новый способ связаться с контрагентом: ");
+					menu.getMenu5();
 					System.out.println("Введите Имя контрагента: ");
 					userName = scanner1.nextLine();
 					int flag1 = 0;
@@ -116,7 +113,7 @@ public class Main {
 					userInput = scanner.nextInt();
 					break;
 				case 6:
-					System.out.println("6. Удалить способ связаться с контрагентом: ");
+					menu.getMenu6();
 					System.out.println(agList);
 					System.out.println("Введите Имя контрагента: ");
 

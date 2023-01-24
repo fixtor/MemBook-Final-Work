@@ -36,9 +36,6 @@ public class AgentUnit<T> {
 		return name;
 	}
 
-	public void setName(T name) {
-		this.name = name;
-	}
 
 	public void addNewField(T newField) {
 		contactList.add(newField);
@@ -57,19 +54,8 @@ public class AgentUnit<T> {
 		if (flag == 0) {System.out.println("not found");}
 	}
 
-	public List<T> getContactList(){
-		return contactList;
-	}
-
 	@Override
 	public String toString() {
-		return "\n"+name + contactList;
+		return "\n" + name + contactList;
 	}
-	//	@Override
-//	public String toString() {
-//		return "\n"+ name + ", " + contactPhone + ", " + contactVk + ", " + contactEmail + ", " + contactTeleg +
-//				", " + adressContact +
-//				", " + newField +
-//				", " + contactList;
-//	}
 }
